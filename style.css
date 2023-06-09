@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-image: url(./assets/images/beach.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+  display: block;
+  color: white;
+  
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  display: block;
+}
+h2,p{
+  color: white;
+  
+}
+
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.card{
+  width: 45%;
+}
+
+span{
+  color: darkblue;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+}
+
+footer p{
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 650px){
+  h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+    display: block;
+    text-align: justify;
+    clear: both;
+    margin-bottom: 30px;
+  }
+  h2{
+    text-align: center;
+  }
+  .tile-image{
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  body{
+    background-image: url(./assets/images/beach\ mobile.png);
+    transition: background-image 0.5s 
+  }
+}
